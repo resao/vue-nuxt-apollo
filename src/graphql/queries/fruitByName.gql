@@ -1,0 +1,11 @@
+query fruitByName($name: String!) {
+  allFruits(filter: {
+    name: $name
+  }) {
+    id
+    name
+    color {
+      name
+    }
+  }
+}

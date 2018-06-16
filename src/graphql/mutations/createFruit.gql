@@ -1,0 +1,6 @@
+mutation CreateFruit($name: String!) {
+  createFruit(name: $name){
+    id
+    name
+  }
+}
