@@ -26,7 +26,7 @@ module.exports = {
   */
   build: {
     babel: {
-      presets: ["@vue/app"]
+      presets: ['@vue/app']
     }
   }
 }
