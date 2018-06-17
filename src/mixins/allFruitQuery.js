@@ -1,10 +1,10 @@
 import allFruit from '@/graphql/queries/allFruit.gql'
 
 export default {
-  asyncData (context, callback) {
+  asyncData (context) {
     const client = context.app.apolloProvider.defaultClient
     return client.query({query: allFruit}).then(({data}) => {
-      callback(null, data)
+      return data
     }).catch(e => {
       context.error(new Error())
     })
