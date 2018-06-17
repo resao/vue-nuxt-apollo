@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FruitList.vue should match html snapshot 1`] = `
+<div class="fruit-list">
+  <h2>All Fruits</h2>
+  <ul>
+    <li>Apple <em>Green</em></li>
+    <li>Banana <em>Yellow</em></li>
+    <li>Banana <em>Yellow</em></li>
+  </ul>
+</div>
+`;
