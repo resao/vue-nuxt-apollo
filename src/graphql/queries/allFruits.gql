@@ -1,4 +1,4 @@
-query allFruit {
+query allFruits {
   allFruits {
     id
     name
