@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 
 /* Plugins */
+import nuxt_plugin_bootstrapvue_2dbaf14a from 'nuxt_plugin_bootstrapvue_2dbaf14a' // Source: ./bootstrap-vue.js
 import nuxt_plugin_apollomodule_44671610 from 'nuxt_plugin_apollomodule_44671610' // Source: ./apollo-module.js
 
 
@@ -134,6 +135,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
+  if (typeof nuxt_plugin_bootstrapvue_2dbaf14a === 'function') await nuxt_plugin_bootstrapvue_2dbaf14a(app.context, inject)
   if (typeof nuxt_plugin_apollomodule_44671610 === 'function') await nuxt_plugin_apollomodule_44671610(app.context, inject)
   
 

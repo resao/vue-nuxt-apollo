@@ -22,7 +22,13 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   // Add apollo module
-  modules: ['@nuxtjs/apollo'],
+  modules: [
+    '@nuxtjs/apollo',
+    ['bootstrap-vue/nuxt', { css: false }]
+  ],
+  css: [
+    '@/assets/scss/core.scss'
+  ],
   // Give apollo module options
   apollo: {
     tokenName: 'yourApolloTokenName', // optional, default: apollo-token
