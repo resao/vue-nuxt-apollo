@@ -1,0 +1,9 @@
+query allColors {
+  allColors {
+    id
+    name
+    fruits {
+      name
+    }
+  }
+}
